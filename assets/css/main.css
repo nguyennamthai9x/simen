@@ -5,19 +5,19 @@
    height: var(--header-height);
 }
 
-.header-container{
+.header .header-container{
    display: flex;
    justify-content: space-between;
    height: var(--header-height);
 }
 
-.country{
+.header-container .country{
    display: flex;
    color: #888;
    font-size: 1.2rem;
 }
 
-.country-info{
+.header-container .country-info{
    display: flex;
    position: relative;
    list-style: none;
@@ -26,19 +26,19 @@
    padding-left: 0;
 }
 
-.country-info .separate::after{
+.header-container .country-info .separate::after{
    content: "";
    display: block;
    position: absolute;
    height: 12px;
    top: 50%;
    transform: translateY(-50%);
-   border-left: 1px solid rgba(245, 245, 245, 0.8);
+   border-left: 1px solid rgba(136, 136, 136, 0.2);
    right: 0;
 }
 
-.language, 
-.currency{
+.country-info .language, 
+.country-info .currency{
    display: flex;
    position: relative;
    align-items: center;
@@ -51,7 +51,7 @@
    display: block;
 }
 
-.flag {
+.language .flag {
    height: 10px;
    width: 16px;
    margin-right: 3px;
@@ -178,15 +178,15 @@
    display: flex;
    align-items: center;
    padding: 0 20px;
-   border-left: 1px solid rgba(245, 245, 245, 0.8);
+   border-left: 1px solid rgba(136, 136, 136, 0.2);
 }
 
 .header .navbar-item:last-child{
-   border-right: 1px solid rgba(245, 245, 245, 0.8);
+   border-right: 1px solid rgba(136, 136, 136, 0.2);
 }
 
 .header .navbar-item .icon{
-   margin-right: 14px;
+   margin-right: 8px;
 }
 
 .header .navbar-item:nth-child(4) .icon{
@@ -198,3 +198,83 @@
    color: #888;
 }
 
+/* BODY */
+
+.body-header{
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 0;
+}
+
+.body-header .logo{
+   width: 25%;
+   display: flex;
+   align-items: center;
+}
+
+.body-header .header-right{
+   display: flex;
+   flex: 1;
+   justify-content: flex-start;
+   color: #666;
+   font-size: 1.3rem;
+}
+
+.header-right .delivery,
+.header-right .sale-off,
+.header-right .gift
+{
+   display: flex;
+   align-items: center;
+}
+
+.header-right .link{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   margin-right: 10px;
+   width: 40px;
+   height: 40px;
+   background-color: #e5e5e5;
+   border-radius: 50%;
+}
+
+.header-right .delivery{
+   margin-right: 70px;
+}
+
+.header-right .sale-off{
+   margin-right: 60px;
+}
+
+
+.header-right .info{
+   display: flex;
+   flex-direction: column;
+}
+
+.header-right .info a{
+   text-decoration: none;
+   color: #666;
+   font-weight: normal;
+   text-transform: uppercase;
+}
+
+.header-right .info a .title{
+   font-weight: 500;
+   margin: 0 0 4px 0;
+}
+
+.header-right .icon{
+   color: #666;
+}
+
+.header-right .delivery .icon{
+   transform: scaleX(-1);
+}
+
+.header-right .description{
+   font-size: 1.3rem;
+}
