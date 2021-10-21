@@ -13,3 +13,7 @@ html {
    font-family: 'Poppins', sans-serif;
    box-sizing: border-box;
 }
+
+.active{
+   color: #e34444 !important;
+}

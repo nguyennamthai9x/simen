@@ -22,16 +22,16 @@
    <div class="app">
       <header class="header">
          <div class="grid wide">
-            <div class="header-container">
+            <div class="header__wrap">
                <div class="country">
-                  <ul class="country-info">
-                     <li class="language separate">
+                  <ul class="country__list">
+                     <li class="country__language country__language-separate">
                         <img class="flag" src="./assets/img/flag/english.jpg" alt="en" >
                         <span class="name">English</span>
                         <i class="fas fa-sort-down switch-arrow"></i>
                         
-                        <div class="language-switch">
-                           <ul class="language-list">
+                        <div class="language__switch">
+                           <ul class="language__list">
                               <li class="language-item">
                                  <img class="flag" src="./assets/img/flag/english.jpg" alt="en" >
                                  <span class="name">ENGLISH</span>
@@ -51,46 +51,44 @@
                            </ul>
                         </div>
                      </li>
-                     
-                     <li class="currency">
+
+                     <li class="country__currency">
                         <span class="name">USD</span>
                         <i class="fas fa-sort-down switch-arrow"></i>
          
-                        <div class="currency-switch">
-                           <ul class="currency-list">
-                              <li class="currency-item">USD</li>
-                              <li class="currency-item">EUR</li>
+                        <div class="currency__switch">
+                           <ul class="currency__switch-list">
+                              <li class="currency__switch-item">USD</li>
+                              <li class="currency__switch-item">EUR</li>
                            </ul>
                         </div>
                      </li>
                   </ul>
-      
-                  
                </div>
    
-               <div class="navbar">
-                  <ul class="navbar-list">
-                     <li class="navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1788" class="link">
+               <div class="header__navbar">
+                  <ul class="header__navbar-list">
+                     <li class="header__navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1788" class="header__navbar-item-link">
                            <i class="fas fa-user icon"></i>
                            My Account
                         </a>
                      </li>
-                     <li class="navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=5" class="link">
-                           <i class="far fa-heart icon"></i>
+                     <li class="header__navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=5" class="header__navbar-item-link">
+                           <i class="far fa-heart header__navbar-item-icon"></i>
                            Wishlist
                         </a>
                      </li>
-                     <li class="navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="link">
-                           <i class="far fa-check-square icon"></i>
+                     <li class="header__navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="header__navbar-item-link">
+                           <i class="far fa-check-square header__navbar-item-icon"></i>
                            Checkout
                         </a>
                      </li>
-                     <li class="navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/wp-login.php?registration=disabled" class="link">
-                           <i class="fa fa-key icon"></i>
+                     <li class="header__navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/wp-login.php?registration=disabled" class="header__navbar-item-link">
+                           <i class="fa fa-key header__navbar-item-icon"></i>
                            Login
                         </a>
                      </li>
@@ -102,64 +100,152 @@
 
       <div class="body">
          <div class="grid wide">
-            <div class="body-header">
-               <div class="logo">
+            <div class="body__header">
+               <div class="body__header-logo">
                   <a href="#" class="link">
                      <img src="./assets/img/logo/logo.png" alt="" class="img">
                   </a>
                </div>
    
-               <div class="header-right">
-                  <div class="delivery">
-                     <div class="box-link">
+               <div class="body__header--right">
+                  <div class="policy">
+                     <div class="policy-link">
                         <a href="#" class="link">
                            <i class="fas fa-truck icon"></i>
                         </a>
                      </div>
-                     <div class="info">
+                     <div class="policy-info">
                         <a href="#">
-                           <h4 class="title">FREE DELIVERY WORLDWIDE</h4>
+                           <h4 class="policy-title">FREE DELIVERY WORLDWIDE</h4>
                         </a>
-                        <span class="description">On order over $100</span>
+                        <span class="policy-description">On order over $100</span>
                      </div>
                   </div>
-                  <div class="sale-off">
-                     <div class="box-link">
+                  <div class="policy">
+                     <div class="policy-link">
                         <a href="#" class="link">
                            <i class="fas fa-cloud-upload-alt icon"></i>
                         </a>
                      </div>
-                     <div class="info">
+                     <div class="policy-info">
                         <a href="#">
-                           <h4 class="title">up to 20% off cosy layers</h4>
+                           <h4 class="policy-title">up to 20% off cosy layers</h4>
                         </a>
-                        <span class="description">Lorem ipsum dolor sit amet</span>
+                        <span class="policy-description">Lorem ipsum dolor sit amet</span>
                      </div>
                   </div>
-                  <div class="gift">
-                     <div class="box-link">
+                  <div class="policy">
+                     <div class="policy-link">
                         <a href="#" class="link">
                            <i class="fas fa-gift icon"></i>
                         </a>
                      </div>
-                     <div class="info">
+                     <div class="policy-info">
                         <a href="#">
-                           <h4 class="title">BUY 1 GET 1 FREE</h4>
+                           <h4 class="policy-title">BUY 1 GET 1 FREE</h4>
                         </a>
-                        <span class="description">On order over $100</span>
+                        <span class="policy-description">On order over $100</span>
                      </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="body__navbar">
+               <div class="navbar__wrapper">
+                  <ul class="navbar-list">
+                     <li class="navbar-item">
+                        <a href="#" class="active">
+                           HOME
+                        </a>
+
+                        <div class="home-page">
+                           <ul class="home-page-list">
+                              <li class="home-page-item">
+                                 <a href="#" class="link">Home Page 1</a>
+                              </li>
+                              <li class="home-page-item">
+                                 <a href="#" class="link">Home Page 2</a>
+                              </li>
+                              <li class="home-page-item">
+                                 <a href="#" class="link">Home Page 3</a>
+                              </li>
+                              <li class="home-page-item">
+                                 <a href="#" class="link">Home Page 4</a>
+                              </li>
+                              <li class="home-page-item">
+                                 <a href="#" class="link">Home Page 5</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+
+
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=furniture" target="_blank">
+                           FURNITURE
+                        </a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
+                           COFFEE TABLES
+                        </a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=sofas" target="_blank">
+                           SOFAS
+                        </a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=bedroom-furniture" target="_blank">
+                           BEDROOM FURNITURE
+                        </a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1798" target="_blank">
+                           SHOP
+                        </a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=2122" target="_blank">
+                           BLOG
+                        </a>                  
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=2587" target="_blank">
+                           SHORTCODES
+                        </a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1773" target="_blank">
+                           CONTACT US
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+   
+               <div class="navbar__right">
+                  <div class="navbar__right-search">
+                     <i class="fa fa-search"></i>
+                  </div>
+   
+                  <div class="navbar__right-cart">
+                     <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="view-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="navbar__right-cart--quantity">0 (items)</span>
+                     </a>
                   </div>
                </div>
             </div>
          </div>
 
+
       </div>
    </div>
 
+   <script>
+      console.log(document.querySelectorAll('.navbar-wrapper .nav>.nav-list>.navbar-item a'))
+   </script>
 
-
-   
-   <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
