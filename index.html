@@ -11,9 +11,8 @@
    <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="stylesheet" href="./assets/css/grid.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <title>Simen Clone</title>
@@ -22,29 +21,28 @@
    <div class="app">
       <header class="header">
          <div class="grid wide">
-            <div class="header__wrap">
-               <div class="country">
-                  <ul class="country__list">
-                     <li class="country__language country__language-separate">
+            <div class="top-header">
+               <div class="top-header--left">
+                  <ul class="switch-list">
+                     <li class="switch-item language language-separate">
                         <img class="flag" src="./assets/img/flag/english.jpg" alt="en" >
                         <span class="name">English</span>
-                        <i class="fas fa-sort-down switch-arrow"></i>
                         
-                        <div class="language__switch">
-                           <ul class="language__list">
-                              <li class="language-item">
+                        <div class="language-change">
+                           <ul class="language-change-list">
+                              <li class="language-change-item">
                                  <img class="flag" src="./assets/img/flag/english.jpg" alt="en" >
                                  <span class="name">ENGLISH</span>
                               </li>
-                              <li class="language-item">
+                              <li class="language-change-item">
                                  <img class="flag" src="./assets/img/flag/rus.jpg" alt="rus" >
                                  <span class="name">RUSSIAN</span>
                               </li>
-                              <li class="language-item">
+                              <li class="language-change-item">
                                  <img class="flag" src="./assets/img/flag/brazil.jpg" alt="bra" >
                                  <span class="name">BRAZIL</span>
                               </li>
-                              <li class="language-item">
+                              <li class="language-change-item">
                                  <img class="flag" src="./assets/img/flag/france.jpg" alt="fra" >
                                  <span class="name">FRANCE</span>
                               </li>
@@ -52,43 +50,42 @@
                         </div>
                      </li>
 
-                     <li class="country__currency">
+                     <li class="switch-item currency">
                         <span class="name">USD</span>
-                        <i class="fas fa-sort-down switch-arrow"></i>
          
-                        <div class="currency__switch">
-                           <ul class="currency__switch-list">
-                              <li class="currency__switch-item">USD</li>
-                              <li class="currency__switch-item">EUR</li>
+                        <div class="currency-change">
+                           <ul class="currency-change-list">
+                              <li class="currency-change-item">USD</li>
+                              <li class="currency-change-item">EUR</li>
                            </ul>
                         </div>
                      </li>
                   </ul>
                </div>
    
-               <div class="header__navbar">
-                  <ul class="header__navbar-list">
-                     <li class="header__navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1788" class="header__navbar-item-link">
-                           <i class="fas fa-user icon"></i>
+               <div class="top-header--right">
+                  <ul class="menu-list">
+                     <li class="menu-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1788" class="menu-item-link">
+                           <i class="fas fa-user menu-item-icon"></i>
                            My Account
                         </a>
                      </li>
-                     <li class="header__navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=5" class="header__navbar-item-link">
-                           <i class="far fa-heart header__navbar-item-icon"></i>
+                     <li class="menu-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=5" class="menu-item-link">
+                           <i class="far fa-heart menu-item-icon"></i>
                            Wishlist
                         </a>
                      </li>
-                     <li class="header__navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="header__navbar-item-link">
-                           <i class="far fa-check-square header__navbar-item-icon"></i>
+                     <li class="menu-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="menu-item-link">
+                           <i class="far fa-check-square menu-item-icon"></i>
                            Checkout
                         </a>
                      </li>
-                     <li class="header__navbar-item">
-                        <a href="http://demo.snstheme.com/wp/simen/wp-login.php?registration=disabled" class="header__navbar-item-link">
-                           <i class="fa fa-key header__navbar-item-icon"></i>
+                     <li class="menu-item">
+                        <a href="http://demo.snstheme.com/wp/simen/wp-login.php?registration=disabled" class="menu-item-link">
+                           <i class="fa fa-key menu-item-icon"></i>
                            Login
                         </a>
                      </li>
@@ -114,11 +111,11 @@
                            <i class="fas fa-truck icon"></i>
                         </a>
                      </div>
-                     <div class="policy-info">
+                     <div class="policy__info">
                         <a href="#">
-                           <h4 class="policy-title">FREE DELIVERY WORLDWIDE</h4>
+                           <h4 class="policy__info-title">FREE DELIVERY WORLDWIDE</h4>
                         </a>
-                        <span class="policy-description">On order over $100</span>
+                        <span class="policy__info-description">On order over $100</span>
                      </div>
                   </div>
                   <div class="policy">
@@ -127,11 +124,11 @@
                            <i class="fas fa-cloud-upload-alt icon"></i>
                         </a>
                      </div>
-                     <div class="policy-info">
+                     <div class="policy__info">
                         <a href="#">
-                           <h4 class="policy-title">up to 20% off cosy layers</h4>
+                           <h4 class="policy__info-title">up to 20% off cosy layers</h4>
                         </a>
-                        <span class="policy-description">Lorem ipsum dolor sit amet</span>
+                        <span class="policy__info-description">Lorem ipsum dolor sit amet</span>
                      </div>
                   </div>
                   <div class="policy">
@@ -140,25 +137,25 @@
                            <i class="fas fa-gift icon"></i>
                         </a>
                      </div>
-                     <div class="policy-info">
+                     <div class="policy__info">
                         <a href="#">
-                           <h4 class="policy-title">BUY 1 GET 1 FREE</h4>
+                           <h4 class="policy__info-title">BUY 1 GET 1 FREE</h4>
                         </a>
-                        <span class="policy-description">On order over $100</span>
+                        <span class="policy__info-description">On order over $100</span>
                      </div>
                   </div>
                </div>
             </div>
 
-            <div class="body__navbar">
-               <div class="navbar__wrapper">
-                  <ul class="navbar-list">
-                     <li class="navbar-item">
+            <div class="main-navbar">
+               <div class="navbar--left">
+                  <ul class="navbar--left-list">
+                     <li class="navbar--left-item">
                         <a href="#" class="active">
                            HOME
                         </a>
 
-                        <div class="home-page">
+                        <div class="home-page sub-menu">
                            <ul class="home-page-list">
                               <li class="home-page-item">
                                  <a href="#" class="link">Home Page 1</a>
@@ -180,42 +177,157 @@
                      </li>
 
 
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=furniture" target="_blank">
                            FURNITURE
                         </a>
+
+                        <div class="furniture sub-menu">
+                           <div class="furniture-list">
+                              <div class="furniture-item">
+                                 <h2 class="furniture-item-title">TABLE</h2>
+
+                                 <a href="#">Kitchen &amp; Dining Room Tables</a>
+                                 <a href="#">Folding Table</a>
+                                 <a href="#">Living Room Tables</a>
+                                 <a href="#">Sofa Tables</a>
+                                 <a href="#">End Tables</a>
+                                 <a href="#">Coffee Tables</a>
+                                 <a href="#">Pedestal Tables</a>
+                                 <a href="#">Home Office Desks</a>
+                              </div>
+                              <div class="furniture-item">
+                                 <h2 class="furniture-item-title">TABLE</h2>
+
+                                 <a href="#">Kitchen &amp; Dining Room Tables</a>
+                                 <a href="#">Folding Table</a>
+                                 <a href="#">Living Room Tables</a>
+                                 <a href="#">Sofa Tables</a>
+                                 <a href="#">End Tables</a>
+                                 <a href="#">Coffee Tables</a>
+                                 <a href="#">Pedestal Tables</a>
+                                 <a href="#">Home Office Desks</a>
+                              </div>
+                              <div class="furniture-item">
+                                 <h2 class="furniture-item-title">TABLE</h2>
+
+                                 <a href="#">Kitchen &amp; Dining Room Tables</a>
+                                 <a href="#">Folding Table</a>
+                                 <a href="#">Living Room Tables</a>
+                                 <a href="#">Sofa Tables</a>
+                                 <a href="#">End Tables</a>
+                                 <a href="#">Coffee Tables</a>
+                                 <a href="#">Pedestal Tables</a>
+                                 <a href="#">Home Office Desks</a>
+                              </div>
+                              <div class="furniture-item">
+                                 <h2 class="furniture-item-title">TABLE</h2>
+
+                                 <a href="#">Kitchen &amp; Dining Room Tables</a>
+                                 <a href="#">Folding Table</a>
+                                 <a href="#">Living Room Tables</a>
+                                 <a href="#">Sofa Tables</a>
+                                 <a href="#">End Tables</a>
+                                 <a href="#">Coffee Tables</a>
+                                 <a href="#">Pedestal Tables</a>
+                              </div>
+                           </div>
+                           
+                           <div class="furniture__banner">
+                              <div class="furniture__banner--left">
+                                 <a href="#">
+                                    <img src="./assets/img/banner/banner-furniture-left.jpg" alt="">
+                                 </a>
+                              </div>
+                              <div class="furniture__banner--right">
+                                 <a href="#">
+                                    <img src="./assets/img/banner/banner-furniture-right.jpg" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </li>
-                     <li class="navbar-item">
+                     
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
                            COFFEE TABLES
                         </a>
                      </li>
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=sofas" target="_blank">
                            SOFAS
                         </a>
                      </li>
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=bedroom-furniture" target="_blank">
                            BEDROOM FURNITURE
                         </a>
+
+                        <div class="bedroom sub-menu">
+                           <ul class="bedroom-list">
+                              <li class="bedroom-item">
+                                 <div class="bedroom-item__preview">
+                                    <a href="#" class="bedroom-item-link">
+                                       <img src="./assets/img/product/sofas.png" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bedroom-item__content">
+                                    <a href="#">SOFA</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ornare urna. Suspendisse a lobortis ex, at efficitur</p>
+                                 </div>
+                              </li>
+                              <li class="bedroom-item">
+                                 <div class="bedroom-item__preview">
+                                    <a href="" class="bedroom-item-link">
+                                       <img src="./assets/img/product/chair.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bedroom-item__content">
+                                    <a href="#">CHAIR</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ornare urna. Suspendisse a lobortis ex, at efficitur</p>
+                                 </div>
+                              </li>
+                              <li class="bedroom-item">
+                                 <div class="bedroom-item__preview">
+                                    <a href="#" class="bedroom-item-link">
+                                       <img src="./assets/img/product/bad.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bedroom-item__content">
+                                    <a href="#">BAD</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ornare urna. Suspendisse a lobortis ex, at efficitur</p>
+                                 </div>
+                              </li>
+                              <li class="bedroom-item">
+                                 <a href="#" class="bedroom-item-link">
+                                       <div class="bedroom-item__preview">
+                                       <img src="./assets/img/product/furniture-chest.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bedroom-item__content">
+                                    <a href="#">FURNITURE CHEST</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ornare urna. Suspendisse a lobortis ex, at efficitur</p>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
                      </li>
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?page_id=1798" target="_blank">
                            SHOP
                         </a>
                      </li>
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?page_id=2122" target="_blank">
                            BLOG
                         </a>                  
                      </li>
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?page_id=2587" target="_blank">
                            SHORTCODES
                         </a>
                      </li>
-                     <li class="navbar-item">
+                     <li class="navbar--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?page_id=1773" target="_blank">
                            CONTACT US
                         </a>
@@ -223,28 +335,22 @@
                   </ul>
                </div>
    
-               <div class="navbar__right">
-                  <div class="navbar__right-search">
+               <div class="main-navbar--right">
+                  <div class="block__search">
                      <i class="fa fa-search"></i>
                   </div>
    
-                  <div class="navbar__right-cart">
+                  <div class="block__cart">
                      <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="view-cart">
                         <i class="fa fa-shopping-cart"></i>
-                        <span class="navbar__right-cart--quantity">0 (items)</span>
+                        <span class="block__cart--quantity">0 (items)</span>
                      </a>
                   </div>
                </div>
             </div>
          </div>
-
-
       </div>
    </div>
-
-   <script>
-      console.log(document.querySelectorAll('.navbar-wrapper .nav>.nav-list>.navbar-item a'))
-   </script>
 
 </body>
 

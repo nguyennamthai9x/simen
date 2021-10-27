@@ -17,3 +17,13 @@ html {
 .active{
    color: #e34444 !important;
 }
+
+.flag {
+   height: 10px;
+   width: 16px;
+   margin-right: 5px;
+}
+
+.link{
+   color: #666;
+}
