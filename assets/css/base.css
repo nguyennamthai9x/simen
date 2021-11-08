@@ -25,5 +25,41 @@ html {
 }
 
 .link{
+   text-decoration: none;
    color: #666;
+}
+
+/* Common */
+.sub-menu{
+   position: absolute;
+   background-color: var(--white-color);
+   top: calc(100% + 12px);
+   border: 1px solid #eaeaea;
+   z-index: 1;
+}
+
+.sub-menu::before,
+.sub-menu::after
+{  
+   content: "";
+   display: block;
+   position: absolute;
+   border-style: solid;
+   width: 0;
+   height: 0;
+}
+
+.sub-menu::before{
+   border-width: 12px;
+   border-color: rgba(234, 234, 234, 0);
+   border-bottom-color: #eaeaea;
+   top: -25px;
+}
+
+.sub-menu::after{
+   border-width: 12px;
+   border-color: rgba(255, 255, 255, 0);
+   border-bottom-color: var(--white-color);
+   top: -24px;
+   z-index: 2;
 }

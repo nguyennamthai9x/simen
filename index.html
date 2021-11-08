@@ -8,8 +8,8 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
    <link rel="stylesheet" href="./assets/css/base.css">
-   <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="stylesheet" href="./assets/css/grid.css">
+   <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
@@ -21,28 +21,28 @@
    <div class="app">
       <header class="header">
          <div class="grid wide">
-            <div class="top-header">
-               <div class="top-header--left">
-                  <ul class="switch-list">
-                     <li class="switch-item language language-separate">
+            <div class="header__container">
+               <div class="header__container--left">
+                  <ul class="toggle">
+                     <li class="toggle-item toggle-item--separate">
                         <img class="flag" src="./assets/img/flag/english.jpg" alt="en" >
                         <span class="name">English</span>
                         
-                        <div class="language-change">
-                           <ul class="language-change-list">
-                              <li class="language-change-item">
+                        <div class="toggle__language">
+                           <ul class="toggle__language-list">
+                              <li class="toggle__language-item">
                                  <img class="flag" src="./assets/img/flag/english.jpg" alt="en" >
                                  <span class="name">ENGLISH</span>
                               </li>
-                              <li class="language-change-item">
+                              <li class="toggle__language-item">
                                  <img class="flag" src="./assets/img/flag/rus.jpg" alt="rus" >
                                  <span class="name">RUSSIAN</span>
                               </li>
-                              <li class="language-change-item">
+                              <li class="toggle__language-item">
                                  <img class="flag" src="./assets/img/flag/brazil.jpg" alt="bra" >
                                  <span class="name">BRAZIL</span>
                               </li>
-                              <li class="language-change-item">
+                              <li class="toggle__language-item">
                                  <img class="flag" src="./assets/img/flag/france.jpg" alt="fra" >
                                  <span class="name">FRANCE</span>
                               </li>
@@ -50,42 +50,42 @@
                         </div>
                      </li>
 
-                     <li class="switch-item currency">
+                     <li class="toggle-item">
                         <span class="name">USD</span>
          
-                        <div class="currency-change">
-                           <ul class="currency-change-list">
-                              <li class="currency-change-item">USD</li>
-                              <li class="currency-change-item">EUR</li>
+                        <div class="toggle__currency">
+                           <ul class="toggle__currency-list">
+                              <li class="toggle__currency-item">USD</li>
+                              <li class="toggle__currency-item">EUR</li>
                            </ul>
                         </div>
                      </li>
                   </ul>
                </div>
    
-               <div class="top-header--right">
-                  <ul class="menu-list">
-                     <li class="menu-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1788" class="menu-item-link">
-                           <i class="fas fa-user menu-item-icon"></i>
+               <div class="header__container--right">
+                  <ul class="navigation-list">
+                     <li class="navigation-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1788" class="link">
+                           <i class="fas fa-user navigation-item-icon"></i>
                            My Account
                         </a>
                      </li>
-                     <li class="menu-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=5" class="menu-item-link">
-                           <i class="far fa-heart menu-item-icon"></i>
+                     <li class="navigation-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=5" class="link">
+                           <i class="far fa-heart navigation-item-icon"></i>
                            Wishlist
                         </a>
                      </li>
-                     <li class="menu-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="menu-item-link">
-                           <i class="far fa-check-square menu-item-icon"></i>
+                     <li class="navigation-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="link">
+                           <i class="far fa-check-square navigation-item-icon"></i>
                            Checkout
                         </a>
                      </li>
-                     <li class="menu-item">
-                        <a href="http://demo.snstheme.com/wp/simen/wp-login.php?registration=disabled" class="menu-item-link">
-                           <i class="fa fa-key menu-item-icon"></i>
+                     <li class="navigation-item">
+                        <a href="http://demo.snstheme.com/wp/simen/wp-login.php?registration=disabled" class="link">
+                           <i class="fa fa-key navigation-item-icon"></i>
                            Login
                         </a>
                      </li>
@@ -95,18 +95,19 @@
          </div>
       </header>
 
-      <div class="body">
+
+      <div class="main">
          <div class="grid wide">
-            <div class="body__header">
-               <div class="body__header-logo">
+            <div class="introduce row">
+               <div class="logo col l-3">
                   <a href="#" class="link">
                      <img src="./assets/img/logo/logo.png" alt="" class="img">
                   </a>
                </div>
    
-               <div class="body__header--right">
-                  <div class="policy">
-                     <div class="policy-link">
+               <div class="policy col l-9">
+                  <div class="policy-item l-4">
+                     <div class="policy-item-link policy-item-rotate">
                         <a href="#" class="link">
                            <i class="fas fa-truck icon"></i>
                         </a>
@@ -118,8 +119,8 @@
                         <span class="policy__info-description">On order over $100</span>
                      </div>
                   </div>
-                  <div class="policy">
-                     <div class="policy-link">
+                  <div class="policy-item l-4">
+                     <div class="policy-item-link">
                         <a href="#" class="link">
                            <i class="fas fa-cloud-upload-alt icon"></i>
                         </a>
@@ -131,8 +132,8 @@
                         <span class="policy__info-description">Lorem ipsum dolor sit amet</span>
                      </div>
                   </div>
-                  <div class="policy">
-                     <div class="policy-link">
+                  <div class="policy-item l-4">
+                     <div class="policy-item-link">
                         <a href="#" class="link">
                            <i class="fas fa-gift icon"></i>
                         </a>
@@ -147,37 +148,36 @@
                </div>
             </div>
 
-            <div class="main-navbar">
-               <div class="navbar--left">
-                  <ul class="navbar--left-list">
-                     <li class="navbar--left-item">
+            <div class="menu row">
+               <div class="menu--left col l-9">
+                  <ul class="menu--left-list">
+                     <li class="menu--left-item menu--left-home">
                         <a href="#" class="active">
                            HOME
                         </a>
 
-                        <div class="home-page sub-menu">
-                           <ul class="home-page-list">
-                              <li class="home-page-item">
+                        <div class="home-menu sub-menu">
+                           <ul class="home-menu-list">
+                              <li class="home-menu-item">
                                  <a href="#" class="link">Home Page 1</a>
                               </li>
-                              <li class="home-page-item">
+                              <li class="home-menu-item">
                                  <a href="#" class="link">Home Page 2</a>
                               </li>
-                              <li class="home-page-item">
+                              <li class="home-menu-item">
                                  <a href="#" class="link">Home Page 3</a>
                               </li>
-                              <li class="home-page-item">
+                              <li class="home-menu-item">
                                  <a href="#" class="link">Home Page 4</a>
                               </li>
-                              <li class="home-page-item">
+                              <li class="home-menu-item">
                                  <a href="#" class="link">Home Page 5</a>
                               </li>
                            </ul>
                         </div>
                      </li>
 
-
-                     <li class="navbar--left-item">
+                     <li class="menu--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=furniture" target="_blank">
                            FURNITURE
                         </a>
@@ -248,17 +248,17 @@
                         </div>
                      </li>
                      
-                     <li class="navbar--left-item">
+                     <li class="menu--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
                            COFFEE TABLES
                         </a>
                      </li>
-                     <li class="navbar--left-item">
+                     <li class="menu--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=sofas" target="_blank">
                            SOFAS
                         </a>
                      </li>
-                     <li class="navbar--left-item">
+                     <li class="menu--left-item">
                         <a href="http://demo.snstheme.com/wp/simen/?product_cat=bedroom-furniture" target="_blank">
                            BEDROOM FURNITURE
                         </a>
@@ -299,7 +299,8 @@
                                  </div>
                               </li>
                               <li class="bedroom-item">
-                                 <a href="#" class="bedroom-item-link">
+                                 <div>
+                                    <a href="#" class="bedroom-item-link">
                                        <div class="bedroom-item__preview">
                                        <img src="./assets/img/product/furniture-chest.jpg" alt="">
                                     </a>
@@ -312,39 +313,44 @@
                            </ul>
                         </div>
                      </li>
-                     <li class="navbar--left-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1798" target="_blank">
+                     <li class="menu--left-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
                            SHOP
                         </a>
                      </li>
-                     <li class="navbar--left-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=2122" target="_blank">
+                     <li class="menu--left-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
                            BLOG
-                        </a>                  
+                        </a>
                      </li>
-                     <li class="navbar--left-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=2587" target="_blank">
+                     <li class="menu--left-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
                            SHORTCODES
                         </a>
                      </li>
-                     <li class="navbar--left-item">
-                        <a href="http://demo.snstheme.com/wp/simen/?page_id=1773" target="_blank">
+                     <li class="menu--left-item">
+                        <a href="http://demo.snstheme.com/wp/simen/?product_cat=coffee-tables" target="_blank">
                            CONTACT US
                         </a>
                      </li>
                   </ul>
                </div>
-   
-               <div class="main-navbar--right">
-                  <div class="block__search">
-                     <i class="fa fa-search"></i>
+               <!-- Sửa đến đây -->
+               <div class="menu--right col l-3">
+                  <div class="menu--right__search">
+                     <i class="fas fa-search"></i>
+                     
                   </div>
-   
-                  <div class="block__cart">
-                     <a href="http://demo.snstheme.com/wp/simen/?page_id=1796" class="view-cart">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span class="block__cart--quantity">0 (items)</span>
-                     </a>
+                  <div class="menu--right__cart">
+                     <i class="fas fa-shopping-cart menu--right__cart-icon"></i>
+                     <span class="menu--right__cart-quantity">0</span>
+                     <p>( items )</p>
+
+                     <div class="menu--right__cart-view sub-menu">
+                        <div class="block--inner">
+                           <p>No products in the cart.</p>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
